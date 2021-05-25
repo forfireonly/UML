@@ -1,0 +1,35 @@
+public class Teacher{
+    private String name;
+    public Teacher(String name) {
+        this.name = name;
+    }
+    public String toString() {
+        return this.name;
+    }
+}
+public class Class{
+    private Teacher teacher;
+    private String course;
+
+    public Class(Teacher teacher, String course) {
+        this.teacher = teacher;
+        this.course= course;
+    }
+    public void printInformation() {
+        System.out.println(this.course + ", teacher: " + this.teacher);
+    }
+}
+import java.util.ArrayList;
+
+public class LearningInstitution {
+    private ArrayList<Teacher> teachers;
+    public LearningInstitution() {
+        this.teachers = new ArrayList<>();
+    }
+    public void addTeacher(Teacher teacher) {
+        this.teachers.add(teacher);
+    }
+    public String toString() {
+        return "Number of teachers in the learning institution: " + this.teachers.size();
+    }
+}
