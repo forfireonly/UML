@@ -1,0 +1,9 @@
+We have three classes: Teacher, Class and LearningInstruction.
+Class Teacher has one private attribute of type String - name. It has public constructor with parameter of type String and a public parameterless method toString
+which has a return type String.
+Class Class has private attribute course, and its type is String. It has private attribute of type Teacher teacher and it is shown by solid arrow pointing from
+class Class to class Teacher. Class Class has public constructor with Teacher type parameter teacher and String type parameter type course. Class Class has a
+parameterless public method printInformation that has a return type void.
+Class LearningInstitution has a private attribute teachers which is type ArrayList that contains objects of type Teacher. This relationship is shown with the 
+solid arrow pointing to class Teacher. ArrayList can contain multiple objects of type Teacher, and it is shown by a star that is located next to  the arrow 
+closer to class Teacher.
